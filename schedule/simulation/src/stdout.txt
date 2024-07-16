@@ -1,0 +1,974 @@
+
+        SystemC 2.3.3-Accellera --- Feb  9 2023 14:45:48
+        Copyright (c) 1996-2018 by all Contributors,
+        ALL RIGHTS RESERVED
+
+@0 s Core 0 runs SDR on frame 0 
+
+
+Info: (I702) default timescale unit used for tracing: 1 ns (trace.vcd)
+
+@20 ms Core 0 runs LDY on frame 0 
+
+@20 ms Core 1 runs LDCB on frame 0 
+
+@35 ms Core 1 runs LDCR on frame 0 
+
+@50 ms Core 0 runs DMA start on frame 0 
+
+@50 ms Accelerator runs IDCT on frame 0 
+
+@70 ms Core 0 runs DMA complete on frame 0 
+
+
+
+@70 ms Core 0 runs CC on frame 0 
+
+
+
+@120 ms Core 0 runs SDR on frame 1 
+
+@130 ms Core 0 runs LDY on frame 1 
+
+@130 ms Core 1 runs LDCB on frame 1 
+
+@135 ms Core 1 runs LDCR on frame 1 
+
+@140 ms Core 0 runs DMA start on frame 1 
+
+@140 ms Accelerator runs IDCT on frame 1 
+
+@160 ms Core 0 runs DMA complete on frame 1 
+
+
+
+@160 ms Core 0 runs CC on frame 1 
+
+
+
+@210 ms Core 0 runs SDR on frame 2 
+
+@220 ms Core 0 runs LDY on frame 2 
+
+@220 ms Core 1 runs LDCB on frame 2 
+
+@225 ms Core 1 runs LDCR on frame 2 
+
+@230 ms Core 0 runs DMA start on frame 2 
+
+@230 ms Accelerator runs IDCT on frame 2 
+
+@250 ms Core 0 runs DMA complete on frame 2 
+
+
+
+@250 ms Core 0 runs CC on frame 2 
+
+
+@300 ms Core 0 runs SDR on frame 3 
+
+
+@310 ms Core 0 runs LDY on frame 3 
+
+@310 ms Core 1 runs LDCB on frame 3 
+
+@315 ms Core 1 runs LDCR on frame 3 
+
+@320 ms Core 0 runs DMA start on frame 3 
+
+@320 ms Accelerator runs IDCT on frame 3 
+
+@340 ms Core 0 runs DMA complete on frame 3 
+
+
+
+@340 ms Core 0 runs CC on frame 3 
+
+
+@390 ms Core 0 runs SDR on frame 4 
+
+@400 ms Core 0 runs LDY on frame 4 
+
+@400 ms Core 1 runs LDCB on frame 4 
+
+@405 ms Core 1 runs LDCR on frame 4 
+
+
+@410 ms Core 0 runs DMA start on frame 4 
+
+@410 ms Accelerator runs IDCT on frame 4 
+
+@430 ms Core 0 runs DMA complete on frame 4 
+
+
+
+@430 ms Core 0 runs CC on frame 4 
+
+
+@480 ms Core 0 runs SDR on frame 5 
+
+@490 ms Core 0 runs LDY on frame 5 
+
+@490 ms Core 1 runs LDCB on frame 5 
+
+@495 ms Core 1 runs LDCR on frame 5 
+
+@500 ms Core 0 runs DMA start on frame 5 
+
+@500 ms Accelerator runs IDCT on frame 5 
+
+
+@520 ms Core 0 runs DMA complete on frame 5 
+
+
+
+@520 ms Core 0 runs CC on frame 5 
+
+
+@570 ms Core 0 runs SDR on frame 6 
+
+@580 ms Core 0 runs LDY on frame 6 
+
+@580 ms Core 1 runs LDCB on frame 6 
+
+@585 ms Core 1 runs LDCR on frame 6 
+
+@590 ms Core 0 runs DMA start on frame 6 
+
+@590 ms Accelerator runs IDCT on frame 6 
+
+
+@610 ms Core 0 runs DMA complete on frame 6 
+
+
+
+@610 ms Core 0 runs CC on frame 6 
+
+
+@660 ms Core 0 runs SDR on frame 7 
+
+@670 ms Core 0 runs LDY on frame 7 
+
+@670 ms Core 1 runs LDCB on frame 7 
+
+@675 ms Core 1 runs LDCR on frame 7 
+
+@680 ms Core 0 runs DMA start on frame 7 
+
+@680 ms Accelerator runs IDCT on frame 7 
+
+@700 ms Core 0 runs DMA complete on frame 7 
+
+
+
+@700 ms Core 0 runs CC on frame 7 
+
+
+
+@750 ms Core 0 runs SDR on frame 8 
+
+@760 ms Core 0 runs LDY on frame 8 
+
+@760 ms Core 1 runs LDCB on frame 8 
+
+@765 ms Core 1 runs LDCR on frame 8 
+
+@770 ms Core 0 runs DMA start on frame 8 
+
+@770 ms Accelerator runs IDCT on frame 8 
+
+@790 ms Core 0 runs DMA complete on frame 8 
+
+
+
+@790 ms Core 0 runs CC on frame 8 
+
+
+
+@840 ms Core 0 runs SDR on frame 9 
+
+@850 ms Core 0 runs LDY on frame 9 
+
+@850 ms Core 1 runs LDCB on frame 9 
+
+@855 ms Core 1 runs LDCR on frame 9 
+
+@860 ms Core 0 runs DMA start on frame 9 
+
+@860 ms Accelerator runs IDCT on frame 9 
+
+@880 ms Core 0 runs DMA complete on frame 9 
+
+
+
+@880 ms Core 0 runs CC on frame 9 
+
+
+
+@930 ms Core 0 runs SDR on frame 10 
+
+@940 ms Core 0 runs LDY on frame 10 
+
+@940 ms Core 1 runs LDCB on frame 10 
+
+@945 ms Core 1 runs LDCR on frame 10 
+
+@950 ms Core 0 runs DMA start on frame 10 
+
+@950 ms Accelerator runs IDCT on frame 10 
+
+@970 ms Core 0 runs DMA complete on frame 10 
+
+
+
+@970 ms Core 0 runs CC on frame 10 
+
+
+
+@1020 ms Core 0 runs SDR on frame 11 
+
+@1030 ms Core 0 runs LDY on frame 11 
+
+@1030 ms Core 1 runs LDCB on frame 11 
+
+@1035 ms Core 1 runs LDCR on frame 11 
+
+@1040 ms Core 0 runs DMA start on frame 11 
+
+@1040 ms Accelerator runs IDCT on frame 11 
+
+@1060 ms Core 0 runs DMA complete on frame 11 
+
+
+
+@1060 ms Core 0 runs CC on frame 11 
+
+
+
+@1110 ms Core 0 runs SDR on frame 12 
+
+@1120 ms Core 0 runs LDY on frame 12 
+
+@1120 ms Core 1 runs LDCB on frame 12 
+
+@1125 ms Core 1 runs LDCR on frame 12 
+
+@1130 ms Core 0 runs DMA start on frame 12 
+
+@1130 ms Accelerator runs IDCT on frame 12 
+
+@1150 ms Core 0 runs DMA complete on frame 12 
+
+
+
+@1150 ms Core 0 runs CC on frame 12 
+
+
+@1200 ms Core 0 runs SDR on frame 13 
+
+
+@1210 ms Core 0 runs LDY on frame 13 
+
+@1210 ms Core 1 runs LDCB on frame 13 
+
+@1215 ms Core 1 runs LDCR on frame 13 
+
+@1220 ms Core 0 runs DMA start on frame 13 
+
+@1220 ms Accelerator runs IDCT on frame 13 
+
+@1240 ms Core 0 runs DMA complete on frame 13 
+
+
+
+@1240 ms Core 0 runs CC on frame 13 
+
+
+@1290 ms Core 0 runs SDR on frame 14 
+
+@1300 ms Core 0 runs LDY on frame 14 
+
+@1300 ms Core 1 runs LDCB on frame 14 
+
+@1305 ms Core 1 runs LDCR on frame 14 
+
+
+@1310 ms Core 0 runs DMA start on frame 14 
+
+@1310 ms Accelerator runs IDCT on frame 14 
+
+@1330 ms Core 0 runs DMA complete on frame 14 
+
+
+
+@1330 ms Core 0 runs CC on frame 14 
+
+
+@1380 ms Core 0 runs SDR on frame 15 
+
+@1390 ms Core 0 runs LDY on frame 15 
+
+@1390 ms Core 1 runs LDCB on frame 15 
+
+@1395 ms Core 1 runs LDCR on frame 15 
+
+@1400 ms Core 0 runs DMA start on frame 15 
+
+@1400 ms Accelerator runs IDCT on frame 15 
+
+
+@1420 ms Core 0 runs DMA complete on frame 15 
+
+
+
+@1420 ms Core 0 runs CC on frame 15 
+
+
+@1470 ms Core 0 runs SDR on frame 16 
+
+@1480 ms Core 0 runs LDY on frame 16 
+
+@1480 ms Core 1 runs LDCB on frame 16 
+
+@1485 ms Core 1 runs LDCR on frame 16 
+
+@1490 ms Core 0 runs DMA start on frame 16 
+
+@1490 ms Accelerator runs IDCT on frame 16 
+
+
+@1510 ms Core 0 runs DMA complete on frame 16 
+
+
+
+@1510 ms Core 0 runs CC on frame 16 
+
+
+@1560 ms Core 0 runs SDR on frame 17 
+
+@1570 ms Core 0 runs LDY on frame 17 
+
+@1570 ms Core 1 runs LDCB on frame 17 
+
+@1575 ms Core 1 runs LDCR on frame 17 
+
+@1580 ms Core 0 runs DMA start on frame 17 
+
+@1580 ms Accelerator runs IDCT on frame 17 
+
+@1600 ms Core 0 runs DMA complete on frame 17 
+
+
+
+@1600 ms Core 0 runs CC on frame 17 
+
+
+
+@1650 ms Core 0 runs SDR on frame 18 
+
+@1660 ms Core 0 runs LDY on frame 18 
+
+@1660 ms Core 1 runs LDCB on frame 18 
+
+@1665 ms Core 1 runs LDCR on frame 18 
+
+@1670 ms Core 0 runs DMA start on frame 18 
+
+@1670 ms Accelerator runs IDCT on frame 18 
+
+@1690 ms Core 0 runs DMA complete on frame 18 
+
+
+
+@1690 ms Core 0 runs CC on frame 18 
+
+
+
+@1740 ms Core 0 runs SDR on frame 19 
+
+@1750 ms Core 0 runs LDY on frame 19 
+
+@1750 ms Core 1 runs LDCB on frame 19 
+
+@1755 ms Core 1 runs LDCR on frame 19 
+
+@1760 ms Core 0 runs DMA start on frame 19 
+
+@1760 ms Accelerator runs IDCT on frame 19 
+
+@1780 ms Core 0 runs DMA complete on frame 19 
+
+
+
+@1780 ms Core 0 runs CC on frame 19 
+
+
+
+@1830 ms Core 0 runs SDR on frame 20 
+
+@1840 ms Core 0 runs LDY on frame 20 
+
+@1840 ms Core 1 runs LDCB on frame 20 
+
+@1845 ms Core 1 runs LDCR on frame 20 
+
+@1850 ms Core 0 runs DMA start on frame 20 
+
+@1850 ms Accelerator runs IDCT on frame 20 
+
+@1870 ms Core 0 runs DMA complete on frame 20 
+
+
+
+@1870 ms Core 0 runs CC on frame 20 
+
+
+
+@1920 ms Core 0 runs SDR on frame 21 
+
+@1930 ms Core 0 runs LDY on frame 21 
+
+@1930 ms Core 1 runs LDCB on frame 21 
+
+@1935 ms Core 1 runs LDCR on frame 21 
+
+@1940 ms Core 0 runs DMA start on frame 21 
+
+@1940 ms Accelerator runs IDCT on frame 21 
+
+@1960 ms Core 0 runs DMA complete on frame 21 
+
+
+
+@1960 ms Core 0 runs CC on frame 21 
+
+
+
+@2010 ms Core 0 runs SDR on frame 22 
+
+@2020 ms Core 0 runs LDY on frame 22 
+
+@2020 ms Core 1 runs LDCB on frame 22 
+
+@2025 ms Core 1 runs LDCR on frame 22 
+
+@2030 ms Core 0 runs DMA start on frame 22 
+
+@2030 ms Accelerator runs IDCT on frame 22 
+
+@2050 ms Core 0 runs DMA complete on frame 22 
+
+
+
+@2050 ms Core 0 runs CC on frame 22 
+
+
+@2100 ms Core 0 runs SDR on frame 23 
+
+
+@2110 ms Core 0 runs LDY on frame 23 
+
+@2110 ms Core 1 runs LDCB on frame 23 
+
+@2115 ms Core 1 runs LDCR on frame 23 
+
+@2120 ms Core 0 runs DMA start on frame 23 
+
+@2120 ms Accelerator runs IDCT on frame 23 
+
+@2140 ms Core 0 runs DMA complete on frame 23 
+
+
+
+@2140 ms Core 0 runs CC on frame 23 
+
+
+@2190 ms Core 0 runs SDR on frame 24 
+
+
+@2210 ms Core 0 runs LDY on frame 24 
+
+@2210 ms Core 1 runs LDCB on frame 24 
+
+@2225 ms Core 1 runs LDCR on frame 24 
+
+@2240 ms Core 0 runs DMA start on frame 24 
+
+@2240 ms Accelerator runs IDCT on frame 24 
+
+@2260 ms Core 0 runs DMA complete on frame 24 
+
+
+
+@2260 ms Core 0 runs CC on frame 24 
+
+
+
+@2310 ms Core 0 runs SDR on frame 25 
+
+@2320 ms Core 0 runs LDY on frame 25 
+
+@2320 ms Core 1 runs LDCB on frame 25 
+
+@2325 ms Core 1 runs LDCR on frame 25 
+
+@2330 ms Core 0 runs DMA start on frame 25 
+
+@2330 ms Accelerator runs IDCT on frame 25 
+
+@2350 ms Core 0 runs DMA complete on frame 25 
+
+
+
+@2350 ms Core 0 runs CC on frame 25 
+
+
+@2400 ms Core 0 runs SDR on frame 26 
+
+
+@2410 ms Core 0 runs LDY on frame 26 
+
+@2410 ms Core 1 runs LDCB on frame 26 
+
+@2415 ms Core 1 runs LDCR on frame 26 
+
+@2420 ms Core 0 runs DMA start on frame 26 
+
+@2420 ms Accelerator runs IDCT on frame 26 
+
+@2440 ms Core 0 runs DMA complete on frame 26 
+
+
+
+@2440 ms Core 0 runs CC on frame 26 
+
+
+@2490 ms Core 0 runs SDR on frame 27 
+
+@2500 ms Core 0 runs LDY on frame 27 
+
+@2500 ms Core 1 runs LDCB on frame 27 
+
+@2505 ms Core 1 runs LDCR on frame 27 
+
+
+@2510 ms Core 0 runs DMA start on frame 27 
+
+@2510 ms Accelerator runs IDCT on frame 27 
+
+@2530 ms Core 0 runs DMA complete on frame 27 
+
+
+
+@2530 ms Core 0 runs CC on frame 27 
+
+
+@2580 ms Core 0 runs SDR on frame 28 
+
+@2590 ms Core 0 runs LDY on frame 28 
+
+@2590 ms Core 1 runs LDCB on frame 28 
+
+@2595 ms Core 1 runs LDCR on frame 28 
+
+@2600 ms Core 0 runs DMA start on frame 28 
+
+@2600 ms Accelerator runs IDCT on frame 28 
+
+
+@2620 ms Core 0 runs DMA complete on frame 28 
+
+
+
+@2620 ms Core 0 runs CC on frame 28 
+
+
+@2670 ms Core 0 runs SDR on frame 29 
+
+@2680 ms Core 0 runs LDY on frame 29 
+
+@2680 ms Core 1 runs LDCB on frame 29 
+
+@2685 ms Core 1 runs LDCR on frame 29 
+
+@2690 ms Core 0 runs DMA start on frame 29 
+
+@2690 ms Accelerator runs IDCT on frame 29 
+
+
+@2710 ms Core 0 runs DMA complete on frame 29 
+
+
+
+@2710 ms Core 0 runs CC on frame 29 
+
+
+@2760 ms Core 0 runs SDR on frame 30 
+
+@2770 ms Core 0 runs LDY on frame 30 
+
+@2770 ms Core 1 runs LDCB on frame 30 
+
+@2775 ms Core 1 runs LDCR on frame 30 
+
+@2780 ms Core 0 runs DMA start on frame 30 
+
+@2780 ms Accelerator runs IDCT on frame 30 
+
+@2800 ms Core 0 runs DMA complete on frame 30 
+
+
+
+@2800 ms Core 0 runs CC on frame 30 
+
+
+
+@2850 ms Core 0 runs SDR on frame 31 
+
+@2860 ms Core 0 runs LDY on frame 31 
+
+@2860 ms Core 1 runs LDCB on frame 31 
+
+@2865 ms Core 1 runs LDCR on frame 31 
+
+@2870 ms Core 0 runs DMA start on frame 31 
+
+@2870 ms Accelerator runs IDCT on frame 31 
+
+@2890 ms Core 0 runs DMA complete on frame 31 
+
+
+
+@2890 ms Core 0 runs CC on frame 31 
+
+
+
+@2940 ms Core 0 runs SDR on frame 32 
+
+@2950 ms Core 0 runs LDY on frame 32 
+
+@2950 ms Core 1 runs LDCB on frame 32 
+
+@2955 ms Core 1 runs LDCR on frame 32 
+
+@2960 ms Core 0 runs DMA start on frame 32 
+
+@2960 ms Accelerator runs IDCT on frame 32 
+
+@2980 ms Core 0 runs DMA complete on frame 32 
+
+
+
+@2980 ms Core 0 runs CC on frame 32 
+
+
+
+@3030 ms Core 0 runs SDR on frame 33 
+
+@3040 ms Core 0 runs LDY on frame 33 
+
+@3040 ms Core 1 runs LDCB on frame 33 
+
+@3045 ms Core 1 runs LDCR on frame 33 
+
+@3050 ms Core 0 runs DMA start on frame 33 
+
+@3050 ms Accelerator runs IDCT on frame 33 
+
+@3070 ms Core 0 runs DMA complete on frame 33 
+
+
+
+@3070 ms Core 0 runs CC on frame 33 
+
+
+
+@3120 ms Core 0 runs SDR on frame 34 
+
+@3130 ms Core 0 runs LDY on frame 34 
+
+@3130 ms Core 1 runs LDCB on frame 34 
+
+@3135 ms Core 1 runs LDCR on frame 34 
+
+@3140 ms Core 0 runs DMA start on frame 34 
+
+@3140 ms Accelerator runs IDCT on frame 34 
+
+@3160 ms Core 0 runs DMA complete on frame 34 
+
+
+
+@3160 ms Core 0 runs CC on frame 34 
+
+
+
+@3210 ms Core 0 runs SDR on frame 35 
+
+@3220 ms Core 0 runs LDY on frame 35 
+
+@3220 ms Core 1 runs LDCB on frame 35 
+
+@3225 ms Core 1 runs LDCR on frame 35 
+
+@3230 ms Core 0 runs DMA start on frame 35 
+
+@3230 ms Accelerator runs IDCT on frame 35 
+
+@3250 ms Core 0 runs DMA complete on frame 35 
+
+
+
+@3250 ms Core 0 runs CC on frame 35 
+
+
+@3300 ms Core 0 runs SDR on frame 36 
+
+
+@3310 ms Core 0 runs LDY on frame 36 
+
+@3310 ms Core 1 runs LDCB on frame 36 
+
+@3315 ms Core 1 runs LDCR on frame 36 
+
+@3320 ms Core 0 runs DMA start on frame 36 
+
+@3320 ms Accelerator runs IDCT on frame 36 
+
+@3340 ms Core 0 runs DMA complete on frame 36 
+
+
+
+@3340 ms Core 0 runs CC on frame 36 
+
+
+@3390 ms Core 0 runs SDR on frame 37 
+
+@3400 ms Core 0 runs LDY on frame 37 
+
+@3400 ms Core 1 runs LDCB on frame 37 
+
+@3405 ms Core 1 runs LDCR on frame 37 
+
+
+@3410 ms Core 0 runs DMA start on frame 37 
+
+@3410 ms Accelerator runs IDCT on frame 37 
+
+@3430 ms Core 0 runs DMA complete on frame 37 
+
+
+
+@3430 ms Core 0 runs CC on frame 37 
+
+
+@3480 ms Core 0 runs SDR on frame 38 
+
+@3490 ms Core 0 runs LDY on frame 38 
+
+@3490 ms Core 1 runs LDCB on frame 38 
+
+@3495 ms Core 1 runs LDCR on frame 38 
+
+@3500 ms Core 0 runs DMA start on frame 38 
+
+@3500 ms Accelerator runs IDCT on frame 38 
+
+
+@3520 ms Core 0 runs DMA complete on frame 38 
+
+
+
+@3520 ms Core 0 runs CC on frame 38 
+
+
+@3570 ms Core 0 runs SDR on frame 39 
+
+@3580 ms Core 0 runs LDY on frame 39 
+
+@3580 ms Core 1 runs LDCB on frame 39 
+
+@3585 ms Core 1 runs LDCR on frame 39 
+
+@3590 ms Core 0 runs DMA start on frame 39 
+
+@3590 ms Accelerator runs IDCT on frame 39 
+
+
+@3610 ms Core 0 runs DMA complete on frame 39 
+
+
+
+@3610 ms Core 0 runs CC on frame 39 
+
+
+@3660 ms Core 0 runs SDR on frame 40 
+
+@3670 ms Core 0 runs LDY on frame 40 
+
+@3670 ms Core 1 runs LDCB on frame 40 
+
+@3675 ms Core 1 runs LDCR on frame 40 
+
+@3680 ms Core 0 runs DMA start on frame 40 
+
+@3680 ms Accelerator runs IDCT on frame 40 
+
+@3700 ms Core 0 runs DMA complete on frame 40 
+
+
+
+
+@3710 ms Core 0 runs CC on frame 40 
+
+
+@3760 ms Core 0 runs SDR on frame 41 
+
+@3770 ms Core 0 runs LDY on frame 41 
+
+@3770 ms Core 1 runs LDCB on frame 41 
+
+@3775 ms Core 1 runs LDCR on frame 41 
+
+@3780 ms Core 0 runs DMA start on frame 41 
+
+@3780 ms Accelerator runs IDCT on frame 41 
+
+@3800 ms Core 0 runs DMA complete on frame 41 
+
+
+
+
+@3810 ms Core 0 runs CC on frame 41 
+
+
+@3860 ms Core 0 runs SDR on frame 42 
+
+@3870 ms Core 0 runs LDY on frame 42 
+
+@3870 ms Core 1 runs LDCB on frame 42 
+
+@3875 ms Core 1 runs LDCR on frame 42 
+
+@3880 ms Core 0 runs DMA start on frame 42 
+
+@3880 ms Accelerator runs IDCT on frame 42 
+
+@3900 ms Core 0 runs DMA complete on frame 42 
+
+
+
+
+@3910 ms Core 0 runs CC on frame 42 
+
+
+@3960 ms Core 0 runs SDR on frame 43 
+
+@3970 ms Core 0 runs LDY on frame 43 
+
+@3970 ms Core 1 runs LDCB on frame 43 
+
+@3975 ms Core 1 runs LDCR on frame 43 
+
+@3980 ms Core 0 runs DMA start on frame 43 
+
+@3980 ms Accelerator runs IDCT on frame 43 
+
+@4 s Core 0 runs DMA complete on frame 43 
+
+
+
+
+@4010 ms Core 0 runs CC on frame 43 
+
+
+@4060 ms Core 0 runs SDR on frame 44 
+
+@4070 ms Core 0 runs LDY on frame 44 
+
+@4070 ms Core 1 runs LDCB on frame 44 
+
+@4075 ms Core 1 runs LDCR on frame 44 
+
+@4080 ms Core 0 runs DMA start on frame 44 
+
+@4080 ms Accelerator runs IDCT on frame 44 
+
+@4100 ms Core 0 runs DMA complete on frame 44 
+
+
+
+
+@4110 ms Core 0 runs CC on frame 44 
+
+
+@4160 ms Core 0 runs SDR on frame 45 
+
+@4170 ms Core 0 runs LDY on frame 45 
+
+@4170 ms Core 1 runs LDCB on frame 45 
+
+@4175 ms Core 1 runs LDCR on frame 45 
+
+@4180 ms Core 0 runs DMA start on frame 45 
+
+@4180 ms Accelerator runs IDCT on frame 45 
+
+@4200 ms Core 0 runs DMA complete on frame 45 
+
+
+
+
+@4210 ms Core 0 runs CC on frame 45 
+
+
+@4260 ms Core 0 runs SDR on frame 46 
+
+@4270 ms Core 0 runs LDY on frame 46 
+
+@4270 ms Core 1 runs LDCB on frame 46 
+
+@4275 ms Core 1 runs LDCR on frame 46 
+
+@4280 ms Core 0 runs DMA start on frame 46 
+
+@4280 ms Accelerator runs IDCT on frame 46 
+
+@4300 ms Core 0 runs DMA complete on frame 46 
+
+
+
+
+@4310 ms Core 0 runs CC on frame 46 
+
+
+@4360 ms Core 0 runs SDR on frame 47 
+
+@4370 ms Core 0 runs LDY on frame 47 
+
+@4370 ms Core 1 runs LDCB on frame 47 
+
+@4375 ms Core 1 runs LDCR on frame 47 
+
+@4380 ms Core 0 runs DMA start on frame 47 
+
+@4380 ms Accelerator runs IDCT on frame 47 
+
+@4400 ms Core 0 runs DMA complete on frame 47 
+
+
+
+
+@4410 ms Core 0 runs CC on frame 47 
+
+
+
+
+
+
+
+
+
+Info: /OSCI/SystemC: Simulation stopped by user.
+ End of simulation 
+

@@ -1,0 +1,13 @@
+libqt_la-qt.lo: qt.c /usr/include/stdc-predef.h copyright.h qt.h \
+ ../../../../src/sysc/packages/qt/qtmd.h \
+ ../../../../src/sysc/packages/qt/md/iX86_64.h
+
+/usr/include/stdc-predef.h:
+
+copyright.h:
+
+qt.h:
+
+../../../../src/sysc/packages/qt/qtmd.h:
+
+../../../../src/sysc/packages/qt/md/iX86_64.h:

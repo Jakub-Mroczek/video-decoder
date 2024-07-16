@@ -1,0 +1,196 @@
+Error: Video will output 48 frames
+Error:@10 ms Video output timer: delay = 2 
+Error:@70 ms Obtaining buffer for frame: 0 
+Error:@70 ms Obtained buffer for frame: 0 
+Error:@110 ms Video output timer: delay = 1 
+Error:@120 ms Registered a buffer
+Error:@160 ms Obtaining buffer for frame: 1 
+Error:@160 ms Obtained buffer for frame: 1 
+Error:@210 ms Video output: outputting frame 0, available registered frames: 0, unregistered buffers: 1 
+Error:@210 ms Registered a buffer
+Error:@250 ms Obtaining buffer for frame: 2 
+Error:@250 ms Obtained buffer for frame: 2 
+Error:@300 ms Registered a buffer
+Error:@310 ms Video output: outputting frame 1, available registered frames: 1, unregistered buffers: 0 
+Error:@340 ms Obtaining buffer for frame: 3 
+Error:@340 ms Obtained buffer for frame: 3 
+Error:@390 ms Registered a buffer
+Error:@410 ms Video output: outputting frame 2, available registered frames: 1, unregistered buffers: 0 
+Error:@430 ms Obtaining buffer for frame: 4 
+Error:@430 ms Obtained buffer for frame: 4 
+Error:@480 ms Registered a buffer
+Error:@510 ms Video output: outputting frame 3, available registered frames: 1, unregistered buffers: 0 
+Error:@520 ms Obtaining buffer for frame: 5 
+Error:@520 ms Obtained buffer for frame: 5 
+Error:@570 ms Registered a buffer
+Error:@610 ms Video output: outputting frame 4, available registered frames: 1, unregistered buffers: 0 
+Error:@610 ms Obtaining buffer for frame: 6 
+Error:@610 ms Obtained buffer for frame: 6 
+Error:@660 ms Registered a buffer
+Error:@700 ms Obtaining buffer for frame: 7 
+Error:@700 ms Obtained buffer for frame: 7 
+Error:@710 ms Video output: outputting frame 5, available registered frames: 1, unregistered buffers: 1 
+Error:@750 ms Registered a buffer
+Error:@790 ms Obtaining buffer for frame: 8 
+Error:@790 ms Obtained buffer for frame: 8 
+Error:@810 ms Video output: outputting frame 6, available registered frames: 1, unregistered buffers: 1 
+Error:@840 ms Registered a buffer
+Error:@880 ms Obtaining buffer for frame: 9 
+Error:@880 ms Obtained buffer for frame: 9 
+Error:@910 ms Video output: outputting frame 7, available registered frames: 1, unregistered buffers: 1 
+Error:@930 ms Registered a buffer
+Error:@970 ms Obtaining buffer for frame: 10 
+Error:@970 ms Obtained buffer for frame: 10 
+Error:@1010 ms Video output: outputting frame 8, available registered frames: 1, unregistered buffers: 1 
+Error:@1020 ms Registered a buffer
+Error:@1060 ms Obtaining buffer for frame: 11 
+Error:@1060 ms Obtained buffer for frame: 11 
+Error:@1110 ms Video output: outputting frame 9, available registered frames: 1, unregistered buffers: 1 
+Error:@1110 ms Registered a buffer
+Error:@1150 ms Obtaining buffer for frame: 12 
+Error:@1150 ms Obtained buffer for frame: 12 
+Error:@1200 ms Registered a buffer
+Error:@1210 ms Video output: outputting frame 10, available registered frames: 2, unregistered buffers: 0 
+Error:@1240 ms Obtaining buffer for frame: 13 
+Error:@1240 ms Obtained buffer for frame: 13 
+Error:@1290 ms Registered a buffer
+Error:@1310 ms Video output: outputting frame 11, available registered frames: 2, unregistered buffers: 0 
+Error:@1330 ms Obtaining buffer for frame: 14 
+Error:@1330 ms Obtained buffer for frame: 14 
+Error:@1380 ms Registered a buffer
+Error:@1410 ms Video output: outputting frame 12, available registered frames: 2, unregistered buffers: 0 
+Error:@1420 ms Obtaining buffer for frame: 15 
+Error:@1420 ms Obtained buffer for frame: 15 
+Error:@1470 ms Registered a buffer
+Error:@1510 ms Video output: outputting frame 13, available registered frames: 2, unregistered buffers: 0 
+Error:@1510 ms Obtaining buffer for frame: 16 
+Error:@1510 ms Obtained buffer for frame: 16 
+Error:@1560 ms Registered a buffer
+Error:@1600 ms Obtaining buffer for frame: 17 
+Error:@1600 ms Obtained buffer for frame: 17 
+Error:@1610 ms Video output: outputting frame 14, available registered frames: 2, unregistered buffers: 1 
+Error:@1650 ms Registered a buffer
+Error:@1690 ms Obtaining buffer for frame: 18 
+Error:@1690 ms Obtained buffer for frame: 18 
+Error:@1710 ms Video output: outputting frame 15, available registered frames: 2, unregistered buffers: 1 
+Error:@1740 ms Registered a buffer
+Error:@1780 ms Obtaining buffer for frame: 19 
+Error:@1780 ms Obtained buffer for frame: 19 
+Error:@1810 ms Video output: outputting frame 16, available registered frames: 2, unregistered buffers: 1 
+Error:@1830 ms Registered a buffer
+Error:@1870 ms Obtaining buffer for frame: 20 
+Error:@1870 ms Obtained buffer for frame: 20 
+Error:@1910 ms Video output: outputting frame 17, available registered frames: 2, unregistered buffers: 1 
+Error:@1920 ms Registered a buffer
+Error:@1960 ms Obtaining buffer for frame: 21 
+Error:@1960 ms Obtained buffer for frame: 21 
+Error:@2010 ms Video output: outputting frame 18, available registered frames: 2, unregistered buffers: 1 
+Error:@2010 ms Registered a buffer
+Error:@2050 ms Obtaining buffer for frame: 22 
+Error:@2050 ms Obtained buffer for frame: 22 
+Error:@2100 ms Registered a buffer
+Error:@2110 ms Video output: outputting frame 19, available registered frames: 3, unregistered buffers: 0 
+Error:@2140 ms Obtaining buffer for frame: 23 
+Error:@2140 ms Obtained buffer for frame: 23 
+Error:@2190 ms Registered a buffer
+Error:@2210 ms Video output: outputting frame 20, available registered frames: 3, unregistered buffers: 0 
+Error:@2260 ms Obtaining buffer for frame: 24 
+Error:@2260 ms Obtained buffer for frame: 24 
+Error:@2310 ms Video output: outputting frame 21, available registered frames: 2, unregistered buffers: 1 
+Error:@2310 ms Registered a buffer
+Error:@2350 ms Obtaining buffer for frame: 25 
+Error:@2350 ms Obtained buffer for frame: 25 
+Error:@2400 ms Registered a buffer
+Error:@2410 ms Video output: outputting frame 22, available registered frames: 3, unregistered buffers: 0 
+Error:@2440 ms Obtaining buffer for frame: 26 
+Error:@2440 ms Obtained buffer for frame: 26 
+Error:@2490 ms Registered a buffer
+Error:@2510 ms Video output: outputting frame 23, available registered frames: 3, unregistered buffers: 0 
+Error:@2530 ms Obtaining buffer for frame: 27 
+Error:@2530 ms Obtained buffer for frame: 27 
+Error:@2580 ms Registered a buffer
+Error:@2610 ms Video output: outputting frame 24, available registered frames: 3, unregistered buffers: 0 
+Error:@2620 ms Obtaining buffer for frame: 28 
+Error:@2620 ms Obtained buffer for frame: 28 
+Error:@2670 ms Registered a buffer
+Error:@2710 ms Video output: outputting frame 25, available registered frames: 3, unregistered buffers: 0 
+Error:@2710 ms Obtaining buffer for frame: 29 
+Error:@2710 ms Obtained buffer for frame: 29 
+Error:@2760 ms Registered a buffer
+Error:@2800 ms Obtaining buffer for frame: 30 
+Error:@2800 ms Obtained buffer for frame: 30 
+Error:@2810 ms Video output: outputting frame 26, available registered frames: 3, unregistered buffers: 1 
+Error:@2850 ms Registered a buffer
+Error:@2890 ms Obtaining buffer for frame: 31 
+Error:@2890 ms Obtained buffer for frame: 31 
+Error:@2910 ms Video output: outputting frame 27, available registered frames: 3, unregistered buffers: 1 
+Error:@2940 ms Registered a buffer
+Error:@2980 ms Obtaining buffer for frame: 32 
+Error:@2980 ms Obtained buffer for frame: 32 
+Error:@3010 ms Video output: outputting frame 28, available registered frames: 3, unregistered buffers: 1 
+Error:@3030 ms Registered a buffer
+Error:@3070 ms Obtaining buffer for frame: 33 
+Error:@3070 ms Obtained buffer for frame: 33 
+Error:@3110 ms Video output: outputting frame 29, available registered frames: 3, unregistered buffers: 1 
+Error:@3120 ms Registered a buffer
+Error:@3160 ms Obtaining buffer for frame: 34 
+Error:@3160 ms Obtained buffer for frame: 34 
+Error:@3210 ms Video output: outputting frame 30, available registered frames: 3, unregistered buffers: 1 
+Error:@3210 ms Registered a buffer
+Error:@3250 ms Obtaining buffer for frame: 35 
+Error:@3250 ms Obtained buffer for frame: 35 
+Error:@3300 ms Registered a buffer
+Error:@3310 ms Video output: outputting frame 31, available registered frames: 4, unregistered buffers: 0 
+Error:@3340 ms Obtaining buffer for frame: 36 
+Error:@3340 ms Obtained buffer for frame: 36 
+Error:@3390 ms Registered a buffer
+Error:@3410 ms Video output: outputting frame 32, available registered frames: 4, unregistered buffers: 0 
+Error:@3430 ms Obtaining buffer for frame: 37 
+Error:@3430 ms Obtained buffer for frame: 37 
+Error:@3480 ms Registered a buffer
+Error:@3510 ms Video output: outputting frame 33, available registered frames: 4, unregistered buffers: 0 
+Error:@3520 ms Obtaining buffer for frame: 38 
+Error:@3520 ms Obtained buffer for frame: 38 
+Error:@3570 ms Registered a buffer
+Error:@3610 ms Video output: outputting frame 34, available registered frames: 4, unregistered buffers: 0 
+Error:@3610 ms Obtaining buffer for frame: 39 
+Error:@3610 ms Obtained buffer for frame: 39 
+Error:@3660 ms Registered a buffer
+Error:@3700 ms Obtaining buffer for frame: 40 
+Error:@3710 ms Video output: outputting frame 35, available registered frames: 4, unregistered buffers: 0 
+Error:@3710 ms Obtained buffer for frame: 40 
+Error:@3760 ms Registered a buffer
+Error:@3800 ms Obtaining buffer for frame: 41 
+Error:@3810 ms Video output: outputting frame 36, available registered frames: 4, unregistered buffers: 0 
+Error:@3810 ms Obtained buffer for frame: 41 
+Error:@3860 ms Registered a buffer
+Error:@3900 ms Obtaining buffer for frame: 42 
+Error:@3910 ms Video output: outputting frame 37, available registered frames: 4, unregistered buffers: 0 
+Error:@3910 ms Obtained buffer for frame: 42 
+Error:@3960 ms Registered a buffer
+Error:@4 s Obtaining buffer for frame: 43 
+Error:@4010 ms Video output: outputting frame 38, available registered frames: 4, unregistered buffers: 0 
+Error:@4010 ms Obtained buffer for frame: 43 
+Error:@4060 ms Registered a buffer
+Error:@4100 ms Obtaining buffer for frame: 44 
+Error:@4110 ms Video output: outputting frame 39, available registered frames: 4, unregistered buffers: 0 
+Error:@4110 ms Obtained buffer for frame: 44 
+Error:@4160 ms Registered a buffer
+Error:@4200 ms Obtaining buffer for frame: 45 
+Error:@4210 ms Video output: outputting frame 40, available registered frames: 4, unregistered buffers: 0 
+Error:@4210 ms Obtained buffer for frame: 45 
+Error:@4260 ms Registered a buffer
+Error:@4300 ms Obtaining buffer for frame: 46 
+Error:@4310 ms Video output: outputting frame 41, available registered frames: 4, unregistered buffers: 0 
+Error:@4310 ms Obtained buffer for frame: 46 
+Error:@4360 ms Registered a buffer
+Error:@4400 ms Obtaining buffer for frame: 47 
+Error:@4410 ms Video output: outputting frame 42, available registered frames: 4, unregistered buffers: 0 
+Error:@4410 ms Obtained buffer for frame: 47 
+Error:@4460 ms Registered a buffer
+Error:@4510 ms Video output: outputting frame 43, available registered frames: 4, unregistered buffers: 0 
+Error:@4610 ms Video output: outputting frame 44, available registered frames: 3, unregistered buffers: 0 
+Error:@4710 ms Video output: outputting frame 45, available registered frames: 2, unregistered buffers: 0 
+Error:@4810 ms Video output: outputting frame 46, available registered frames: 1, unregistered buffers: 0 
+Error:@4910 ms Video output: outputting frame 47, available registered frames: 0, unregistered buffers: 0 
+Error:@4910 ms Video output timer: all frames sent correctly, STOP

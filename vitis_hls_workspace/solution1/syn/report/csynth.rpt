@@ -1,0 +1,218 @@
+
+
+================================================================
+== Synthesis Summary Report of 'idct'
+================================================================
++ General Information: 
+    * Date:           Thu Feb  9 12:06:49 2023
+    * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+    * Project:        vitis_hls_workspace
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------------------------+------+------+---------+-----------+----------+---------+------+----------+--------+----------+-----------+-----------+-----+
+    |             Modules             | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |        |          |           |           |     |
+    |             & Loops             | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM  |    DSP   |     FF    |    LUT    | URAM|
+    +---------------------------------+------+------+---------+-----------+----------+---------+------+----------+--------+----------+-----------+-----------+-----+
+    |+ idct*                          |     -|  0.12|      121|  1.210e+03|         -|       44|     -|  dataflow|  6 (2%)|  24 (10%)|  2085 (1%)|  2811 (5%)|    -|
+    | + Loop_dcac_row_copy_proc1      |     -|  0.91|       34|    340.000|         -|       34|     -|        no|       -|         -|   16 (~0%)|  151 (~0%)|    -|
+    |  o dcac_row_copy_dcac_col_copy  |     -|  8.75|       32|    320.000|         1|        1|    32|       yes|       -|         -|          -|          -|    -|
+    | + Loop_idct_column_loop_proc    |     -|  0.12|       42|    420.000|         -|       42|     -|        no|       -|   12 (5%)|  1085 (1%)|  1352 (2%)|    -|
+    |  o idct_column_loop             |    II|  8.75|       40|    400.000|        13|        4|     8|       yes|       -|         -|          -|          -|    -|
+    | + Loop_idct_row_loop_proc2      |     -|  0.97|       43|    430.000|         -|       43|     -|        no|       -|   12 (5%)|  984 (~0%)|  1308 (2%)|    -|
+    |  o idct_row_loop                |    II|  8.75|       41|    410.000|        14|        4|     8|       yes|       -|         -|          -|          -|    -|
+    +---------------------------------+------+------+---------+-----------+----------+---------+------+----------+--------+----------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AXIS
++-----------+---------------+-------+--------+--------+
+| Interface | Register Mode | TDATA | TREADY | TVALID |
++-----------+---------------+-------+--------+--------+
+| DCAC      | both          | 32    | 1      | 1      |
+| block_r   | both          | 32    | 1      | 1      |
++-----------+---------------+-------+--------+--------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+----------+
+| Interface | Type         | Ports    |
++-----------+--------------+----------+
+| ap_clk    | clock        | ap_clk   |
+| ap_rst_n  | reset        | ap_rst_n |
+| ap_ctrl   | ap_ctrl_none |          |
++-----------+--------------+----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------------+
+| Argument | Direction | Datatype       |
++----------+-----------+----------------+
+| DCAC     | in        | short*         |
+| block_r  | out       | unsigned char* |
++----------+-----------+----------------+
+
+* SW-to-HW Mapping
++----------+--------------+-----------+
+| Argument | HW Interface | HW Type   |
++----------+--------------+-----------+
+| DCAC     | DCAC         | interface |
+| block_r  | block_r      | interface |
++----------+--------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++----------------------------------------+-----+--------+-------------+-----+--------+---------+
+| Name                                   | DSP | Pragma | Variable    | Op  | Impl   | Latency |
++----------------------------------------+-----+--------+-------------+-----+--------+---------+
+| + idct                                 | 24  |        |             |     |        |         |
+|  + Loop_dcac_row_copy_proc1            | 0   |        |             |     |        |         |
+|    add_ln40_1_fu_129_p2                | -   |        | add_ln40_1  | add | fabric | 0       |
+|    add_ln40_fu_141_p2                  | -   |        | add_ln40    | add | fabric | 0       |
+|    add_ln44_fu_191_p2                  | -   |        | add_ln44    | add | fabric | 0       |
+|    add_ln41_fu_237_p2                  | -   |        | add_ln41    | add | fabric | 0       |
+|  + Loop_idct_column_loop_proc          | 12  |        |             |     |        |         |
+|    add_ln50_fu_249_p2                  | -   |        | add_ln50    | add | fabric | 0       |
+|    add_ln78_fu_274_p2                  | -   |        | add_ln78    | add | fabric | 0       |
+|    am_addmul_16s_16s_13ns_31_4_1_U6    | 1   |        | add_ln58    | add | dsp48  | 3       |
+|    am_addmul_16s_16s_13ns_31_4_1_U6    | 1   |        | z1          | mul | dsp48  | 3       |
+|    mac_muladd_16s_15s_31s_31_4_1_U10   | 1   |        | mul_ln59    | mul | dsp48  | 3       |
+|    mac_muladd_16s_15s_31s_31_4_1_U10   | 1   |        | tmp2        | add | dsp48  | 3       |
+|    mac_muladd_16s_13ns_30ns_30_4_1_U11 | 1   |        | mul_ln60    | mul | dsp48  | 3       |
+|    mac_muladd_16s_13ns_30ns_30_4_1_U11 | 1   |        | tmp3        | add | dsp48  | 3       |
+|    sub_ln66_fu_421_p2                  | -   |        | sub_ln66    | sub | fabric | 0       |
+|    add_ln65_fu_427_p2                  | -   |        | add_ln65    | add | fabric | 0       |
+|    tmp13_fu_445_p2                     | -   |        | tmp13       | sub | fabric | 0       |
+|    z3_4_fu_333_p2                      | -   |        | z3_4        | add | fabric | 0       |
+|    am_addmul_16s_16s_16s_32_4_1_U12    | 1   |        | z2_3        | add | dsp48  | 3       |
+|    z4_fu_347_p2                        | -   |        | z4          | add | fabric | 0       |
+|    am_addmul_17s_17s_14ns_32_4_1_U4    | 1   |        | add_ln86    | add | dsp48  | 3       |
+|    am_addmul_16s_16s_14s_31_4_1_U5     | 1   |        | z1_3        | add | dsp48  | 3       |
+|    am_addmul_17s_17s_14ns_32_4_1_U4    | 1   |        | z5          | mul | dsp48  | 3       |
+|    mac_muladd_16s_12ns_31s_31_4_1_U13  | 1   |        | tmp0_5      | mul | dsp48  | 3       |
+|    mac_muladd_16s_15ns_32s_32_4_1_U14  | 1   |        | tmp1_5      | mul | dsp48  | 3       |
+|    mac_muladd_16s_15ns_32s_32_4_1_U15  | 1   |        | tmp2_5      | mul | dsp48  | 3       |
+|    mac_muladd_16s_14ns_31s_31_4_1_U7   | 1   |        | tmp3_5      | mul | dsp48  | 3       |
+|    am_addmul_16s_16s_14s_31_4_1_U5     | 1   |        | z1_4        | mul | dsp48  | 3       |
+|    mac_muladd_16s_14ns_31s_31_4_1_U7   | 1   |        | add_ln103   | add | dsp48  | 3       |
+|    mac_muladd_16s_12ns_31s_31_4_1_U13  | 1   |        | add_ln100   | add | dsp48  | 3       |
+|    am_addmul_16s_16s_16s_32_4_1_U12    | 1   |        | z2_4        | mul | dsp48  | 3       |
+|    mac_muladd_17s_15s_32s_32_4_1_U8    | 1   |        | z3_5        | mul | dsp48  | 3       |
+|    mac_muladd_17s_15s_32s_32_4_1_U8    | 1   |        | z3_6        | add | dsp48  | 3       |
+|    mac_muladd_16s_15ns_32s_32_4_1_U15  | 1   |        | add_ln102   | add | dsp48  | 3       |
+|    tmp2_6_fu_500_p2                    | -   |        | tmp2_6      | add | fabric | 0       |
+|    tmp0_6_fu_504_p2                    | -   |        | tmp0_6      | add | fabric | 0       |
+|    mac_muladd_17s_13s_32s_32_4_1_U9    | 1   |        | z4_3        | mul | dsp48  | 3       |
+|    mac_muladd_17s_13s_32s_32_4_1_U9    | 1   |        | z4_4        | add | dsp48  | 3       |
+|    tmp3_6_fu_454_p2                    | -   |        | tmp3_6      | add | fabric | 0       |
+|    mac_muladd_16s_15ns_32s_32_4_1_U14  | 1   |        | add_ln101   | add | dsp48  | 3       |
+|    tmp1_6_fu_509_p2                    | -   |        | tmp1_6      | add | fabric | 0       |
+|    tmp10_fu_459_p2                     | -   |        | tmp10       | add | fabric | 0       |
+|    add_ln107_fu_468_p2                 | -   |        | add_ln107   | add | fabric | 0       |
+|    sub_ln108_fu_516_p2                 | -   |        | sub_ln108   | sub | fabric | 0       |
+|    add_ln107_1_fu_521_p2               | -   |        | add_ln107_1 | add | fabric | 0       |
+|    tmp11_fu_548_p2                     | -   |        | tmp11       | add | fabric | 0       |
+|    add_ln109_fu_557_p2                 | -   |        | add_ln109   | add | fabric | 0       |
+|    sub_ln110_fu_563_p2                 | -   |        | sub_ln110   | sub | fabric | 0       |
+|    add_ln109_1_fu_569_p2               | -   |        | add_ln109_1 | add | fabric | 0       |
+|    sub_ln112_fu_601_p2                 | -   |        | sub_ln112   | sub | fabric | 0       |
+|    add_ln111_1_fu_607_p2               | -   |        | add_ln111_1 | add | fabric | 0       |
+|    add_ln113_fu_633_p2                 | -   |        | add_ln113   | add | fabric | 0       |
+|    sub_ln114_fu_639_p2                 | -   |        | sub_ln114   | sub | fabric | 0       |
+|    add_ln113_1_fu_645_p2               | -   |        | add_ln113_1 | add | fabric | 0       |
+|  + Loop_idct_row_loop_proc2            | 12  |        |             |     |        |         |
+|    add_ln121_fu_212_p2                 | -   |        | add_ln121   | add | fabric | 0       |
+|    am_addmul_21s_21s_13ns_32_4_1_U29   | 1   |        | add_ln129   | add | dsp48  | 3       |
+|    am_addmul_21s_21s_13ns_32_4_1_U29   | 1   |        | z1          | mul | dsp48  | 3       |
+|    mac_muladd_21s_15s_32s_32_4_1_U33   | 1   |        | mul_ln130   | mul | dsp48  | 3       |
+|    mac_muladd_21s_15s_32s_32_4_1_U33   | 1   |        | tmp2        | add | dsp48  | 3       |
+|    mac_muladd_21s_13ns_32s_32_4_1_U34  | 1   |        | mul_ln131   | mul | dsp48  | 3       |
+|    mac_muladd_21s_13ns_32s_32_4_1_U34  | 1   |        | tmp3        | add | dsp48  | 3       |
+|    sub_ln134_fu_379_p2                 | -   |        | sub_ln134   | sub | fabric | 0       |
+|    add_ln133_fu_383_p2                 | -   |        | add_ln133   | add | fabric | 0       |
+|    z3_1_fu_310_p2                      | -   |        | z3_1        | add | fabric | 0       |
+|    am_addmul_21s_21s_16s_32_4_1_U35    | 1   |        | z2_1        | add | dsp48  | 3       |
+|    z4_fu_323_p2                        | -   |        | z4          | add | fabric | 0       |
+|    am_addmul_22s_22s_14ns_32_4_1_U30   | 1   |        | add_ln154   | add | dsp48  | 3       |
+|    am_addmul_21s_21s_14s_32_4_1_U36    | 1   |        | z1_1        | add | dsp48  | 3       |
+|    am_addmul_22s_22s_14ns_32_4_1_U30   | 1   |        | z5          | mul | dsp48  | 3       |
+|    mac_muladd_21s_12ns_32ns_32_4_1_U38 | 1   |        | tmp0_2      | mul | dsp48  | 3       |
+|    mac_muladd_21s_15ns_32ns_32_4_1_U39 | 1   |        | tmp1_2      | mul | dsp48  | 3       |
+|    mac_muladd_21s_15ns_32ns_32_4_1_U37 | 1   |        | tmp2_2      | mul | dsp48  | 3       |
+|    mac_muladd_21s_14ns_32ns_32_4_1_U40 | 1   |        | tmp3_2      | mul | dsp48  | 3       |
+|    am_addmul_21s_21s_14s_32_4_1_U36    | 1   |        | z1_2        | mul | dsp48  | 3       |
+|    am_addmul_21s_21s_16s_32_4_1_U35    | 1   |        | z2_2        | mul | dsp48  | 3       |
+|    mac_muladd_22s_15s_32s_32_4_1_U31   | 1   |        | z3_2        | mul | dsp48  | 3       |
+|    mac_muladd_22s_15s_32s_32_4_1_U31   | 1   |        | z3_3        | add | dsp48  | 3       |
+|    mac_muladd_21s_15ns_32ns_32_4_1_U37 | 1   |        | add_ln171   | add | dsp48  | 3       |
+|    tmp2_3_fu_429_p2                    | -   |        | tmp2_3      | add | fabric | 0       |
+|    mac_muladd_21s_12ns_32ns_32_4_1_U38 | 1   |        | add_ln169   | add | dsp48  | 3       |
+|    tmp0_3_fu_433_p2                    | -   |        | tmp0_3      | add | fabric | 0       |
+|    mac_muladd_22s_13s_32s_32_4_1_U32   | 1   |        | z4_1        | mul | dsp48  | 3       |
+|    mac_muladd_22s_13s_32s_32_4_1_U32   | 1   |        | z4_2        | add | dsp48  | 3       |
+|    mac_muladd_21s_14ns_32ns_32_4_1_U40 | 1   |        | add_ln172   | add | dsp48  | 3       |
+|    tmp3_3_fu_437_p2                    | -   |        | tmp3_3      | add | fabric | 0       |
+|    mac_muladd_21s_15ns_32ns_32_4_1_U39 | 1   |        | add_ln170   | add | dsp48  | 3       |
+|    tmp1_3_fu_441_p2                    | -   |        | tmp1_3      | add | fabric | 0       |
+|    sub_ln183_fu_596_p2                 | -   |        | sub_ln183   | sub | fabric | 0       |
+|    add_ln176_1_fu_600_p2               | -   |        | add_ln176_1 | add | fabric | 0       |
+|    sub_ln182_fu_456_p2                 | -   |        | sub_ln182   | sub | fabric | 0       |
+|    add_ln177_1_fu_461_p2               | -   |        | add_ln177_1 | add | fabric | 0       |
+|    sub_ln181_fu_666_p2                 | -   |        | sub_ln181   | sub | fabric | 0       |
+|    add_ln178_1_fu_670_p2               | -   |        | add_ln178_1 | add | fabric | 0       |
+|    sub_ln180_fu_736_p2                 | -   |        | sub_ln180   | sub | fabric | 0       |
+|    add_ln179_1_fu_740_p2               | -   |        | add_ln179_1 | add | fabric | 0       |
++----------------------------------------+-----+--------+-------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++---------------+------+------+--------+-----------+---------+------+---------+
+| Name          | BRAM | URAM | Pragma | Variable  | Storage | Impl | Latency |
++---------------+------+------+--------+-----------+---------+------+---------+
+| + idct        | 6    | 0    |        |           |         |      |         |
+|   workspace_U | 2    | -    |        | workspace | ram_t2p | auto | 1       |
+|   dcac_tmp_U  | 1    | -    |        | dcac_tmp  | ram_t2p | auto | 1       |
++---------------+------+------+--------+-----------+---------+------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Pragmas with Warnings
++----------+---------+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Type     | Options | Location                      | Messages                                                                                                                                                                           |
++----------+---------+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| dataflow |         | hls_src/2D_idct.cc:38 in idct | Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region |
++----------+---------+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Valid Pragma Syntax
++---------------+------------------------------------------+------------------------------------------+
+| Type          | Options                                  | Location                                 |
++---------------+------------------------------------------+------------------------------------------+
+| interface     | ap_ctrl_none port=return                 | hls_src/2D_idct.cc:21 in idct, return    |
+| interface     | axis register both port=DCAC             | hls_src/2D_idct.cc:22 in idct, DCAC      |
+| interface     | axis register both port=block_r          | hls_src/2D_idct.cc:23 in idct, block_r   |
+| array_reshape | variable=DCAC cyclic factor=2 dim=2      | hls_src/2D_idct.cc:24 in idct, DCAC      |
+| array_reshape | variable=block_r cyclic factor=4 dim=2   | hls_src/2D_idct.cc:25 in idct, block_r   |
+| array_reshape | variable=workspace cyclic factor=1 dim=0 | hls_src/2D_idct.cc:35 in idct, workspace |
+| array_reshape | variable=dcac_tmp cyclic factor=1 dim=0  | hls_src/2D_idct.cc:36 in idct, dcac_tmp  |
+| pipeline      |                                          | hls_src/2D_idct.cc:42 in idct            |
+| unroll        | factor=2 skip_exit_check                 | hls_src/2D_idct.cc:43 in idct            |
+| pipeline      |                                          | hls_src/2D_idct.cc:51 in idct            |
+| pipeline      |                                          | hls_src/2D_idct.cc:122 in idct           |
++---------------+------------------------------------------+------------------------------------------+
+
+

@@ -1,0 +1,23 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../hls_src/2D_idct_tb.cc in debug mode
+   Compiling(apcc) ../../../../hls_src/util.c in debug mode
+INFO: [HLS 200-10] Running 'C:/Software/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'mjfsawye' on host 'ece-mcu16' (Windows NT_amd64 version 6.2) on Thu Feb 09 12:17:51 -0500 2023
+INFO: [HLS 200-10] In directory 'C:/Users/mjfsawye/ece423-labs/vitis_hls_workspace/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 5.598 seconds; peak allocated memory: 0.828 MB.
+   Compiling(apcc) ../../../../hls_src/tables.c in debug mode
+INFO: [HLS 200-10] Running 'C:/Software/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'mjfsawye' on host 'ece-mcu16' (Windows NT_amd64 version 6.2) on Thu Feb 09 12:17:59 -0500 2023
+INFO: [HLS 200-10] In directory 'C:/Users/mjfsawye/ece423-labs/vitis_hls_workspace/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 4.236 seconds; peak allocated memory: 0.812 MB.
+   Compiling ../../../../hls_src/2D_idct.cc in debug mode
+   Generating csim.exe
+Test 1
+Test 2
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

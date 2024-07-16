@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="2D_idct.cc" path="C:\Users\mjfsawye\ece423-labs\hls_src\2D_idct.cc"/>
+    <originFiles name="dct_math.h" path="C:\Users\mjfsawye\ece423-labs\hls_src\dct_math.h"/>
+    <originFiles name="mjpeg423_types.h" path="C:\Users\mjfsawye\ece423-labs\hls_src\mjpeg423_types.h"/>
+    <originFiles name="tables.c" path="C:\Users\mjfsawye\ece423-labs\hls_src\tables.c"/>
+    <originFiles name="util.c" path="C:\Users\mjfsawye\ece423-labs\hls_src\util.c"/>
+    <originFiles name="util.h" path="C:\Users\mjfsawye\ece423-labs\hls_src\util.h"/>
+  </source>
+  <testbench>
+    <originFiles name="2D_idct_tb.cc" path="C:\Users\mjfsawye\ece423-labs\hls_src\2D_idct_tb.cc"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

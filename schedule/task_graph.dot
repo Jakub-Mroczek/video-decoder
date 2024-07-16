@@ -1,0 +1,107 @@
+#!/usr/bin/dot -Tpng
+
+digraph {
+    /* I-frame tasks */
+
+    I_SD_READ
+    I_LD_Y
+    I_LD_CB
+    I_LD_CR
+    I_L1_FLUSH_Y
+    I_L2_FLUSH_Y
+    I_L1_FLUSH_CB
+    I_L2_FLUSH_CB
+    I_L1_FLUSH_CR
+    I_L2_FLUSH_CR
+    I_DMA_START_Y
+    I_DMA_START_CB
+    I_DMA_START_CR
+    I_IDCT_Y
+    I_IDCT_CB
+    I_IDCT_CR
+    I_DMA_POLL_Y
+    I_DMA_POLL_CB
+    I_DMA_POLL_CR
+    I_CC
+    I_BUFF_REG
+
+    I_SD_READ      -> I_LD_Y
+    I_SD_READ      -> I_LD_CB
+    I_SD_READ      -> I_LD_CR
+    I_LD_Y         -> I_L1_FLUSH_Y
+    I_LD_CB        -> I_L1_FLUSH_CB
+    I_LD_CR        -> I_L1_FLUSH_CR
+    I_L1_FLUSH_Y   -> I_L2_FLUSH_Y
+    I_L1_FLUSH_CB  -> I_L2_FLUSH_CB
+    I_L1_FLUSH_CR  -> I_L2_FLUSH_CR
+    I_L2_FLUSH_Y   -> I_DMA_START_Y
+    I_L2_FLUSH_CB  -> I_DMA_START_CB
+    I_L2_FLUSH_CR  -> I_DMA_START_CR
+    I_DMA_START_Y  -> I_IDCT_Y
+    I_DMA_START_CB -> I_IDCT_CB
+    I_DMA_START_CR -> I_IDCT_CR
+    I_IDCT_Y       -> I_DMA_POLL_Y
+    I_IDCT_CB      -> I_DMA_POLL_CB
+    I_IDCT_CR      -> I_DMA_POLL_CR
+    I_DMA_POLL_Y   -> I_CC
+    I_DMA_POLL_CB  -> I_CC
+    I_DMA_POLL_CR  -> I_CC
+    /*
+     * Assumes CC on same core as BUFF_REG;
+     * otherwise would be:
+     *    I_CC          -> I_L1_FLUSH_CC
+     *    I_L1_FLUSH_CC -> I_BUF_REG
+     */
+    I_CC           -> I_BUFF_REG
+
+    /* P-frame tasks */
+
+    P_SD_READ
+    P_LD_Y
+    P_LD_CB
+    P_LD_CR
+    P_L1_FLUSH_Y
+    P_L2_FLUSH_Y
+    P_L1_FLUSH_CB
+    P_L2_FLUSH_CB
+    P_L1_FLUSH_CR
+    P_L2_FLUSH_CR
+    P_DMA_START_Y
+    P_DMA_START_CB
+    P_DMA_START_CR
+    P_IDCT_Y
+    P_IDCT_CB
+    P_IDCT_CR
+    P_DMA_POLL_Y
+    P_DMA_POLL_CB
+    P_DMA_POLL_CR
+    P_CC
+    P_BUFF_REG
+
+    P_SD_READ      -> P_LD_Y
+    P_SD_READ      -> P_LD_CB
+    P_SD_READ      -> P_LD_CR
+    I_DMA_POLL_Y   -> P_LD_Y
+    I_DMA_POLL_CB  -> P_LD_CB
+    I_DMA_POLL_CR  -> P_LD_CR
+    P_LD_Y         -> P_L1_FLUSH_Y
+    P_LD_CB        -> P_L1_FLUSH_CB
+    P_LD_CR        -> P_L1_FLUSH_CR
+    P_L1_FLUSH_Y   -> P_L2_FLUSH_Y
+    P_L1_FLUSH_CB  -> P_L2_FLUSH_CB
+    P_L1_FLUSH_CR  -> P_L2_FLUSH_CR
+    P_L2_FLUSH_Y   -> P_DMA_START_Y
+    P_L2_FLUSH_CB  -> P_DMA_START_CB
+    P_L2_FLUSH_CR  -> P_DMA_START_CR
+    P_DMA_START_Y  -> P_IDCT_Y
+    P_DMA_START_CB -> P_IDCT_CB
+    P_DMA_START_CR -> P_IDCT_CR
+    P_IDCT_Y       -> P_DMA_POLL_Y
+    P_IDCT_CB      -> P_DMA_POLL_CB
+    P_IDCT_CR      -> P_DMA_POLL_CR
+    P_DMA_POLL_Y   -> P_CC
+    P_DMA_POLL_CB  -> P_CC
+    P_DMA_POLL_CR  -> P_CC
+    /* Same comment as for I-frame */
+    P_CC           -> P_BUFF_REG
+}
